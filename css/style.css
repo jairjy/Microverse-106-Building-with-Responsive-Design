@@ -24,7 +24,10 @@
   gap: 10px;
 }
 
-.main-grid-element {
+.main-grid header,
+.main-grid section,
+.main-grid footer,
+.main-grid div {
   background-color: teal;
 }
 
@@ -38,14 +41,46 @@
 
 .banner {
   grid-column: span 3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.banner div {
+  background: crimson;
+}
+
+.img-left {
+  grid-row: span 2;
 }
 
 .latest {
   grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 30px 250px 250px;
+  gap: 10px;
+  align-content: space-around;
 }
 
-.latest-funding {
+.latest div {
+  background: crimson;
+}
+
+.latest-news {
+  grid-column: span 4;
+}
+
+.funding {
   grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 30px 272px;
+}
+
+.funding div {
+  background: crimson;
 }
 
 .class-setion {
