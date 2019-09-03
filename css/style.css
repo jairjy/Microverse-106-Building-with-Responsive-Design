@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --colorBackgroud: #eee;
   --menuBlack: #131313;
@@ -11,11 +15,63 @@
   src: url('./font/44.ttf');
 }
 
+/* #region main-grid */
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1192px 1fr;
+  grid-template-rows: 32px 78px 498px 666px 316px 2169px 662px 277px;
+  gap: 10px;
+}
+
+.main-grid-element {
+  background-color: teal;
+}
+
+.navbar {
+  grid-column: span 3;
+}
+
+.submenu {
+  grid-column: span 3;
+}
+
+.banner {
+  grid-column: span 3;
+}
+
+.latest {
+  grid-column: 2;
+}
+
+.latest-funding {
+  grid-column: 2;
+}
+
+.class-setion {
+  grid-column: 2;
+}
+
+.deals {
+  grid-column: 2;
+}
+
+.footer {
+  grid-column: span 3;
+}
+
+.footer-legal {
+  grid-column: span 3;
+}
+/* #endregion */
+
+/* #region navbar */
+
 navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: var(--menuBlack);
 }
 
@@ -32,12 +88,10 @@ navbar li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 5px;
+  padding: 8px 5px;
   text-decoration: none;
   font-size:15px;
   font-family: 'ARS Maquette',sans-serif;
 }
 
-.submenu {
-  
-}
+/* #end-region */
