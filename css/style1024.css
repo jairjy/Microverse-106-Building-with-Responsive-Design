@@ -1,0 +1,11 @@
+* {
+  background: khaki;
+}
+
+.main-grid {
+  grid-template-columns: 0 1fr 0;
+}
+
+.banner {
+  grid-template-columns: 3fr 313px;
+}
