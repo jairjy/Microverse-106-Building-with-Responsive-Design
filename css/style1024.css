@@ -4,8 +4,15 @@
 
 .main-grid {
   grid-template-columns: 0 1fr 0;
+  grid-template-rows: 32px 78px 498px 2066px 316px 2169px 662px 277px;
 }
 
 .banner {
   grid-template-columns: 3fr 313px;
+}
+
+
+.latest {
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(720px, 1fr));
 }

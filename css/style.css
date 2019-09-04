@@ -19,7 +19,7 @@
 
 .main-grid {
   display: grid;
-  grid-template-columns: 1fr 1192px 1fr;
+  grid-template-columns: 1fr minmax(90%, 1192px) 1fr;
   grid-template-rows: 32px 78px 498px 666px 316px 2169px 662px 277px;
   gap: 10px;
 }
@@ -35,7 +35,7 @@
 .banner {
   grid-column: span 3;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 60% 40%;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
 }
