@@ -10,40 +10,7 @@ body {
   font-size: 15px;
   line-height: normal;
   color: #333;
-  /* dark-grey */
-  /* background-color: #eee; */
 }
-/*
-.logo {
-  width: 5%;
-  height: 40px;
-}
-
-ul {
-  overflow: hidden;
-  background-color: #333;
-} */
-
-/* .navbar ul li {
-  float: left;
-} */
-
-/* li {
-  display: block;
-}
-
-li a {
-  float: left;
-  color:#eee;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.menu-right ul li {
-  color: red;
-  float: right;
-} */
 
 .row-black,
 .row-left,
@@ -54,6 +21,12 @@ li a {
   align-items: center;
   background: black;
   height: 32px;
+}
+
+.row-white {
+  position: fixed;
+  background: #eee;
+  width: 100%;
 }
 
 .row-left a,
@@ -103,4 +76,93 @@ li a {
   padding-left: 10px;
   height: 30px;
   background:#FD3;
+}
+
+
+.container {
+  display: flex;
+}
+
+.container-two {
+  width: 40%;
+  display: flex;
+    flex-direction: column;
+}
+
+.big-img  {
+  width: 100%;
+  height: 500px;
+  background-image: url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=477ae5a62fd5ade3f1e3a08c013af882&auto=format&fit=crop&w=1502&q=80');
+  background-size: cover;
+}
+
+.picture-up  {
+    width: 100%;
+    height: 50%;
+    background: orange;
+    background-image: url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=477ae5a62fd5ade3f1e3a08c013af882&auto=format&fit=crop&w=1502&q=80');
+    background-size: cover;
+}
+
+.container-latest {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container-news {
+  display: flex;
+  flex-wrap: wrap;
+  background: #333;
+}
+
+.colunm {
+  height: 250px;
+  width: 25%;
+  background: #FD3;
+}
+
+.container-deal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container-funding {
+  display: flex;
+  flex-wrap: wrap
+}
+
+.row {
+  background: orange;
+  height: 250px;
+  width: 25%;
+}
+
+.container-articles {
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+}
+
+.colunm-article {
+  background: purple;
+  height: 300px;
+  width: 33.33%;
+  justify-content: space-between;
+}
+
+.container-footer {
+  height: 70px;
+  width: 100%;
+}
+
+.container-social-footer {
+  background: blue;
+  height: 50px;
+}
+
+.container-credits {
+  background: black;
+  height: 40px;
 }
