@@ -1,153 +1,50 @@
 * {
   box-sizing: border-box;
-}
-
-:root {
-  --colorBackgroud: #eee;
-  --menuBlack: #131313;
-  --menuWhite: #fff;
-  --colorWhiteForTExt: #fff;
-  --colorHelp: red;
-}
-
-@font-face {
-  font-family: 'Tagesschrift';
-  src: url('./font/44.ttf');
-}
-
-/* #region main-layout */
-
-.main-grid {
-  display: grid;
-  grid-template-columns: 1fr minmax(90%, 1192px) 1fr;
-  grid-template-rows: 32px 78px 498px 666px 316px 2169px 662px 277px;
-  gap: 10px;
-}
-
-.navbar {
-  grid-column: span 3;
-}
-
-.submenu {
-  grid-column: span 3;
-}
-
-.banner {
-  grid-column: span 3;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-}
-
-.img-left {
-  grid-row: span 2;
-}
-
-.latest,
-.deals {
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 30px 250px 250px;
-  align-content: space-around;
-  gap: 10px;
-}
-
-
-.latest-news {
-  grid-column: span 4;
-}
-
-.funding {
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 30px 272px;
-  align-content: space-around;
-  gap: 10px;
-}
-
-.section {
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 680px 680px 680px;
-  align-content: space-around;
-  gap: 10px;
-}
-
-.deals {
-  grid-column: 2;
-}
-
-.footer {
-  grid-column: span 3;
-}
-
-.footer-legal {
-  grid-column: span 3;
-}
-/* #endregion */
-
-/* #region temporary-color */
-
-.main-grid header,
-.main-grid section,
-.main-grid footer,
-.main-grid div {
-  background-color: teal;
-}
-
-.banner div {
-  background: crimson;
-}
-
-.latest div,
-.deals div {
-  background: crimson;
-}
-
-.funding div {
-  background: crimson;
-}
-
-.section div {
-  background: crimson;
-}
-
-/* #endregion */
-
-/* #region navbar */
-
-navbar ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Georgia', Cambria, serif;
+  font-size: 15px;
+  line-height: normal;
+  color: #333;
+  /* dark-grey */
+  /* background-color: #eee; */
+}
+
+.logo {
+  width: 5%;
+  height: 40px;
+}
+
+ul {
   overflow: hidden;
-  background-color: var(--menuBlack);
+  background-color: #333;
 }
 
-navbar .teste {
-	float:right;
-}
-
-
-navbar li {
+/* .navbar ul li {
   float: left;
-}
+} */
 
-navbar li a {
+li {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 8px 5px;
-  text-decoration: none;
-  font-size:15px;
-  font-family: 'ARS Maquette',sans-serif;
 }
 
-.submenu li {
-  display: inline;
+li a {
+  float: left;
+  color:#eee;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-/* #end-region */
+
+.menu-right ul li {
+  color: red;
+  float: right;
+}
+
+.row, .left {
+  /* display: flex; */
+}
