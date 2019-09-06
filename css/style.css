@@ -235,54 +235,24 @@ main {
     display: initial;
   }
 
-  .banner {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .banner-left {
-    height: 257px;
-  }
-
-  .banner-picture {
-    height: 257px;
-  }
-
-  .banner-right {
-    width: 100%;
-  }
-
   .latest,
-  .deals {
+  .deals,
+  .funding,
+  .articles {
     width: 100%;
-    margin: 10px;
   }
 
   .latest-container-element,
-  .deals-container-element {
-    width: 33.33%;
-  }
-
-  .funding {
-    width: 100%;
-  }
-
+  .deals-container-element,
   .funding-container-element {
     width: 33.33%;
-  }
-
-  .funding-container-element:last-child {
-    display: none;
-  }
-
-  .articles {
-    width: 100%;
   }
 
   .articles-element {
     width: 50%;
   }
 
+  .funding-container-element:last-child,
   .articles-element:last-child {
     display: none;
   }
@@ -292,6 +262,28 @@ main {
 
 /* #region media-query: 768px */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .banner-left,
+  .banner-picture {
+    height: 257px;
+  }
+
+  .banner-right,
+  .latest-container-element,
+  .deals-container-element,
+  .funding-container-element,
+  .articles-element {
+    width: 100%;
+  }
+
+  .latest-container-element,
+  .deals-container-element {
+    height: 88px;
+  }
+}
 /* #endregion */
