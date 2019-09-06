@@ -20,7 +20,15 @@ body {
 
 header {
   position: fixed;
+  display:flex;
   width: 100%;
+}
+
+.row-black,
+.row-white,
+.row-yellow,
+.header-menu {
+  width:100%;
 }
 
 .row-black,
@@ -50,11 +58,14 @@ header {
 }
 
 .white-logo {
-  width: 106px;
-  height: 100%;
+  display:none;
+  width: 200px;
+  height: 110px;
+  background: red;
 }
 
 .white-logo img {
+  /* float:left; */
   width: 100%;
   height: 100%;
 }
@@ -212,5 +223,25 @@ main {
   background: black;
   height: 40px;
 }
+
+/* #endregion */
+
+/* #region media-query: 1024px */
+
+@media only screen and (max-width: 1024px) {
+
+.white-logo {
+  display: initial;
+}
+
+}
+
+/* #endregion */
+
+/* #region media-query: 768px */
+
+/* @media only screen and (max-width: 768px) {
+
+} */
 
 /* #endregion */
