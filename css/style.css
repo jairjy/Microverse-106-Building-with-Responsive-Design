@@ -20,7 +20,7 @@ body {
 
 header {
   position: fixed;
-  display:flex;
+  display: flex;
   width: 100%;
 }
 
@@ -28,7 +28,7 @@ header {
 .row-white,
 .row-yellow,
 .header-menu {
-  width:100%;
+  width: 100%;
 }
 
 .row-black,
@@ -58,7 +58,7 @@ header {
 }
 
 .white-logo {
-  display:none;
+  display: none;
   width: 200px;
   height: 110px;
   background: red;
@@ -111,13 +111,16 @@ header {
   height: 500px;
   background-image: url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=477ae5a62fd5ade3f1e3a08c013af882&auto=format&fit=crop&w=1502&q=80');
   background-size: cover;
-  /* margin-right: 5px; */
+  background-position: center;
   margin: 5px;
 }
+
 .banner-right {
   width: 40%;
   display: flex;
   flex-direction: column;
+  background-size: cover;
+  background-position: center;
 }
 
 .banner-picture {
@@ -126,7 +129,7 @@ header {
   background: orange;
   background-image: url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=477ae5a62fd5ade3f1e3a08c013af882&auto=format&fit=crop&w=1502&q=80');
   background-size: cover;
-  /* margin-bottom: 5px; */
+  background-position: center;
   margin: 5px;
 }
 
@@ -145,8 +148,6 @@ main {
 .articles,
 .deals {
   width: 1152px;
-  /* max-width: 1152px; */
-  /* min-width: 644px; */
   margin: 10px;
 }
 
@@ -230,18 +231,67 @@ main {
 
 @media only screen and (max-width: 1024px) {
 
-.white-logo {
-  display: initial;
-}
+  .white-logo {
+    display: initial;
+  }
 
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .banner-left {
+    height: 257px;
+  }
+
+  .banner-picture {
+    height: 257px;
+  }
+
+  .banner-right {
+    width: 100%;
+  }
+
+  .latest,
+  .deals {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .latest-container-element,
+  .deals-container-element {
+    width: 33.33%;
+  }
+
+  .funding {
+    width: 100%;
+  }
+
+  .funding-container-element {
+    width: 33.33%;
+  }
+
+  .funding-container-element:last-child {
+    display: none;
+  }
+
+  .articles {
+    width: 100%;
+  }
+
+  .articles-element {
+    width: 50%;
+  }
+
+  .articles-element:last-child {
+    display: none;
+  }
 }
 
 /* #endregion */
 
 /* #region media-query: 768px */
 
-/* @media only screen and (max-width: 768px) {
-
-} */
+@media only screen and (max-width: 768px) {}
 
 /* #endregion */
