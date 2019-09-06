@@ -92,6 +92,7 @@ header {
 .banner {
   display: flex;
   padding-top: 120px;
+  margin-bottom: 40px;
 }
 
 .banner-left {
@@ -99,6 +100,8 @@ header {
   height: 500px;
   background-image: url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=477ae5a62fd5ade3f1e3a08c013af882&auto=format&fit=crop&w=1502&q=80');
   background-size: cover;
+  /* margin-right: 5px; */
+  margin: 5px;
 }
 .banner-right {
   width: 40%;
@@ -106,13 +109,14 @@ header {
   flex-direction: column;
 }
 
-
 .banner-picture {
-  width: 100%;
+  gap: 40px;
   height: 50%;
   background: orange;
   background-image: url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=477ae5a62fd5ade3f1e3a08c013af882&auto=format&fit=crop&w=1502&q=80');
   background-size: cover;
+  /* margin-bottom: 5px; */
+  margin: 5px;
 }
 
 /* #endregion */
@@ -125,6 +129,16 @@ main {
   align-items: center;
 }
 
+.latest,
+.funding,
+.articles,
+.deals {
+  width: 1152px;
+  /* max-width: 1152px; */
+  /* min-width: 644px; */
+  margin: 10px;
+}
+
 .title {
   background: teal;
   color: white;
@@ -134,9 +148,7 @@ main {
 .deals {
   display: flex;
   flex-direction: column;
-  width: 1152px;
-  /* max-width: 1152px; */
-  /* min-width: 644px; */
+
 }
 
 .latest-container,
@@ -150,17 +162,12 @@ main {
 .deals-container-element {
   height: 250px;
   width: 25%;
-  /* width: 100%; */
   background: #FD3;
 }
 
 .funding {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  width: 1152px;
-  /* max-width: 1152px; */
-  /* min-width: 644px; */
 }
 
 .funding-container {
@@ -178,10 +185,6 @@ main {
 .articles {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  width: 1152px;
-  /* max-width: 1152px; */
-  /* min-width: 644px; */
 }
 
 .articles-element {
