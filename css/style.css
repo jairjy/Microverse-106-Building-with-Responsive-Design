@@ -6,15 +6,41 @@
   padding: 0;
 }
 
-* { background-color: rgba(255,0,0,.2); }
-* * { background-color: rgba(0,255,0,.2); }
-* * * { background-color: rgba(0,0,255,.2); }
-* * * * { background-color: rgba(255,0,255,.2); }
-* * * * * { background-color: rgba(0,255,255,.2); }
-* * * * * * { background-color: rgba(255,255,0,.2); }
-* * * * * * * { background-color: rgba(255,0,0,.2); }
-* * * * * * * * { background-color: rgba(0,255,0,.2); }
-* * * * * * * * * { background-color: rgba(0,0,255,.2); }
+* {
+  background-color: rgba(255, 0, 0, .2);
+}
+
+* * {
+  background-color: rgba(0, 255, 0, .2);
+}
+
+* * * {
+  background-color: rgba(0, 0, 255, .2);
+}
+
+* * * * {
+  background-color: rgba(255, 0, 255, .2);
+}
+
+* * * * * {
+  background-color: rgba(0, 255, 255, .2);
+}
+
+* * * * * * {
+  background-color: rgba(255, 255, 0, .2);
+}
+
+* * * * * * * {
+  background-color: rgba(255, 0, 0, .2);
+}
+
+* * * * * * * * {
+  background-color: rgba(0, 255, 0, .2);
+}
+
+* * * * * * * * * {
+  background-color: rgba(0, 0, 255, .2);
+}
 
 body {
   margin: 0;
@@ -112,7 +138,7 @@ header {
   display: flex;
   padding-top: 120px;
   margin-bottom: 40px;
-  height:700px;
+  height: 700px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   font-weight: bold;
@@ -240,6 +266,7 @@ main {
   background-size: cover;
   background-position: center;
 }
+
 .subtitle-img-latest {
   background-color: #999999;
 }
@@ -252,6 +279,7 @@ main {
   text-decoration: underline;
   color: red;
 }
+
 .author-latest,
 .clock-latest {
   font-family: inherit;
@@ -277,12 +305,12 @@ main {
   margin: 4px;
 }
 
-.funding-img {
-  /* background:url('../img/funding-img/invest.jpg'); */
-  /* width: 20%; */
-  /* height: 20%; */
-  /* background-size: cover; */
-}
+/* .funding-img {
+  background: url('../img/funding-img/invest.jpg');
+  width: 20%;
+  height: 20%;
+  background-size: cover;
+} */
 
 .funding-title {
   font-size: 1rem;
@@ -295,12 +323,12 @@ main {
   width: 100%;
   height: 20%;
   padding-left: 30%;
-  padding-top:12px;
+  padding-top: 12px;
 }
 
 .funding-line-one,
 .funding-line-two {
-  padding-left:30px;
+  padding-left: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: white;
@@ -310,6 +338,11 @@ main {
   padding-top: 12px;
   text-align: left;
   word-spacing: 4px;
+}
+
+figcaption {
+  height: 79px;
+  ;
 }
 
 .articles {
@@ -327,13 +360,14 @@ main {
   margin: 5px auto;
 }
 
-.articles-element-title{
+.articles-element-title {
   font-size: 14px;
   background-color: white;
   width: 100%;
   height: 15%;
   padding-left: 10px;
 }
+
 .article-element-img {
   display: flex;
   flex-direction: column;
@@ -349,7 +383,7 @@ main {
   width: 25%;
   font-weight: bold;
   padding-top: 70px;
-  
+
 }
 
 .article-element-subtitle {
@@ -433,6 +467,7 @@ main {
 /* #region media-query: 768px */
 
 @media only screen and (max-width: 768px) {
+
   .row-black,
   .white-menu a {
     display: none;
@@ -494,4 +529,5 @@ main {
     height: 88px;
   }
 }
+
 /* #endregion */
