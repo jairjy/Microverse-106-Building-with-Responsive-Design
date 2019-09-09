@@ -6,12 +6,22 @@
   padding: 0;
 }
 
+* { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); }
+* * * * * * * { background-color: rgba(255,0,0,.2); }
+* * * * * * * * { background-color: rgba(0,255,0,.2); }
+* * * * * * * * * { background-color: rgba(0,0,255,.2); }
+
 body {
   margin: 0;
   font-family: 'Georgia', Cambria, serif;
   font-size: 15px;
   line-height: normal;
-  color: #333;
+  /* color: #333; */
 }
 
 /* #endregion */
@@ -102,7 +112,10 @@ header {
   display: flex;
   padding-top: 120px;
   margin-bottom: 40px;
-  height:700px
+  height:700px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: bold;
 }
 
 .banner-left,
@@ -120,11 +133,49 @@ header {
 }
 
 .banner-picture {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   background-image: url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=477ae5a62fd5ade3f1e3a08c013af882&auto=format&fit=crop&w=1502&q=80');
   background-size: cover;
   background-position: center;
   margin: 5px;
+  padding: 10px;
+}
+
+.banner-top {
+  display: flex;
+  justify-content: space-between;
+  height: 30%
+}
+
+.banner-logo {
+  margin-top: 20px;
+}
+
+.banner-date {
+  margin-top: 10px;
+}
+
+.banner-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+#banner-big-title {
+  font-size: 3em;
+}
+
+.banner-credits {
+  display: flex;
+}
+
+.banner-author,
+.banner-hour,
+.banner-share {
+  margin-right: 10px;
 }
 
 /* #endregion */
@@ -146,7 +197,7 @@ main {
 }
 
 .title {
-  background: teal;
+  /* background: teal; */
   color: white;
 }
 
@@ -168,7 +219,7 @@ main {
 .deals-container-element {
   height: 250px;
   width: 25%;
-  background: #FD3;
+  /* background: #FD3; */
 }
 
 .funding {
@@ -183,7 +234,7 @@ main {
 }
 
 .funding-container-element {
-  background: orange;
+  /* background: orange; */
   height: 250px;
   width: 25%;
 }
@@ -194,7 +245,7 @@ main {
 }
 
 .articles-element {
-  background: purple;
+  /* background: purple; */
   height: 300px;
   width: 33.33%;
   justify-content: space-between;
@@ -234,6 +285,10 @@ main {
     grid-row: span 2;
     height: 80px;
     /* background: red; */
+  }
+
+  .banner-top {
+    display: none;
   }
 
   .row-black,
@@ -310,6 +365,10 @@ main {
 
   .banner-picture {
     height: 257px;
+  }
+
+  #banner-big-title {
+    font-size: initial;
   }
 
   .banner-left,
