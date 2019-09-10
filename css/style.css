@@ -1,11 +1,17 @@
 /* #region body */
 
-/* * {
+* {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
+  /* font-family: Arimo, sans-serif; */
 }
 
+@font-face {
+  font-family: "Raj";
+  src: url("Rajdhani-Medium.ttf")
+}
+/*
 * {
   background-color: rgba(255, 0, 0, .2);
 }
@@ -75,6 +81,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background: black;
+  font-family: Arimo, sans-serif;
   height: 32px;
 }
 
@@ -83,6 +90,8 @@ header {
   display: flex;
   height: 48px;
   align-items: center;
+  font-family: Raj, sans-serif;
+  font-size: 1.2em;
 }
 
 
@@ -128,6 +137,7 @@ header {
   padding-left: 10px;
   height: 30px;
   background: #FD3;
+  font-family: Arimo, sans-serif;
 }
 
 /* #endregion */
@@ -160,7 +170,6 @@ header {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-image: url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=477ae5a62fd5ade3f1e3a08c013af882&auto=format&fit=crop&w=1502&q=80');
   background-size: cover;
   background-position: center;
   margin: 5px;
@@ -168,7 +177,8 @@ header {
 }
 
 #big-picture {
-  background-image: linear-gradient(to bottom right, #ff6600 0%, #ffffff10 70%), url('https://images.unsplash.com/photo-1513407030348-c983a97b98d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=477ae5a62fd5ade3f1e3a08c013af882&auto=format&fit=crop&w=1502&q=80');
+  background-image: linear-gradient(to bottom right, rgba(251, 110, 131, 0.5) 0%, rgba(0, 0, 0, 0.5) 60%), url('../img/banner-1.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.725) 80%)
 }
 
 .banner-top {
@@ -178,7 +188,7 @@ header {
 }
 
 .banner-logo {
-  background-image: url("../img/tnw-white.png");
+  background-image: url("../img/tnw-logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 20px;
@@ -189,6 +199,7 @@ header {
   color: white;
   font-size: 1.2em;
   margin-top: 10px;
+  font-family: Arimo, sans-serif;
 }
 
 .banner-bottom,
@@ -205,7 +216,7 @@ header {
 
 .banner-section,
 .articles-section {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Raj, section;
   font-size: 1.1em;
   color: white;
   font-weight: bold;
@@ -217,6 +228,7 @@ header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .banner-credits,
@@ -235,6 +247,7 @@ header {
 .articles-hour,
 .deals-author,
 .deals-hour {
+  font-family: Arimo, sans-serif;
   color: white;
   margin-right: 10px;
 }
