@@ -15,6 +15,7 @@
   font-family: "Raj";
   src: url("Rajdhani-Medium.ttf")
 }
+
 /*
 * {
   background-color: rgba(255, 0, 0, .2);
@@ -380,6 +381,7 @@ main {
   padding-bottom: 12px;
   margin: 3px;
 }
+
 .funding-subtitle-second h2 {
   margin: 0;
   padding: 0;
@@ -389,8 +391,8 @@ main {
   width: 100%;
   height: 20px;
   text-align: justify;
-  padding-top:20px;
-  font-size:17px;
+  padding-top: 20px;
+  font-size: 17px;
 }
 
 .funding-line i {
@@ -490,7 +492,7 @@ figcaption {
 }
 
 .articles-list a::before {
-  color:orange;
+  color: orange;
   content: " ● ";
 }
 
@@ -530,8 +532,9 @@ figcaption {
   text-decoration: none;
   color: #000;
 }
+
 .footer-credits {
-  background:chartreuse;
+  background: chartreuse;
   height: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -540,6 +543,7 @@ figcaption {
 .footer-credits p {
   text-align: center;
 }
+
 .latest-container-element:last-child,
 .deals-container-element:last-child {
   display: none;
@@ -584,6 +588,32 @@ figcaption {
   .funding-container-element:last-child,
   .articles-element:last-child {
     display: none;
+  }
+
+  .articles {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .funding-container-element {
+    width: 31.33%;
+  }
+
+  .funding-p {
+    height: 110px;
+    padding-left: 18px;
+  }
+
+  .footer-social {
+    background: red;
+    height: 0px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 120px;
+  }
+
+  .footer-credits {
+    padding-bottom: 90px;
   }
 }
 
