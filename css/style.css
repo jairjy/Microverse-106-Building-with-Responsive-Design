@@ -418,7 +418,8 @@ header {
   height: 60px;
   margin: 0 auto;
   top: 15px;
-  background: blue;
+  background-size: cover;
+  background-position: center;
 }
 
 .funding-line {
@@ -434,7 +435,10 @@ header {
 .funding-p {
   grid-column: span 2;
   padding: 10px;
-  font-size: .8em;
+  font-size: 0.9rem;
+  word-spacing: 3px;
+  line-height: 1.7em;
+  color: #555;
 }
 
 .funding-line-one,
@@ -551,36 +555,41 @@ figcaption {
 }
 
 .footer-social {
-  background: blue;
+  background: #131313;
   height: 50px;
   text-align: center;
   font-size: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
+  color: #eee;
 }
 
 .footer-menu {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center; 
 }
 
 .footer-menu a {
+  padding: 12px;
   font-size: 18px;
-  margin: 5px;
+  margin: 06px;
   text-decoration: none;
-  color: #000;
+  color: #eee;
 }
 
 .footer-credits {
-  background: chartreuse;
+  background:#000;
   height: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
+  text-align: center;
+  line-height: 1.4;
 }
 
 .footer-credits p {
   text-align: center;
+  color: #eee;
 }
 
 /* .latest-container-element:last-child,
@@ -648,12 +657,13 @@ figcaption {
   }
 
   .footer-social {
-    background: red;
+    background: #131313;
     height: 0px;
     text-align: center;
     font-size: 40px;
     padding-top: 50px;
     padding-bottom: 120px;
+    color: #eee;
   }
 
   .footer-credits {
@@ -715,6 +725,10 @@ figcaption {
   .latest-container-element,
   .deals-container-element {
     height: 88px;
+  }
+  .banner-left,
+  .banner-right {
+    width: 100%;
   }
 
   .articles {
