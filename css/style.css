@@ -688,6 +688,26 @@ figcaption {
     grid-template-columns: initial;
     grid-template-rows: initial;
   }
+
+  .latest-container-element,
+  .deals-container-element {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: repeat(2, minmax(10px, auto));
+    gap: 12px;
+  }
+
+  .latest-image,
+  .deals-image {
+    height: 75px;
+    grid-row: span 2;
+  }
+  .latest-subtitle,
+  .deals-subtitle {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
 }
 
 /* #endregion */
