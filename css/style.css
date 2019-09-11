@@ -565,6 +565,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: Raj, sans-serif;
 }
 
 .footer-menu a {
@@ -576,19 +577,27 @@ header {
 }
 
 .footer-credits {
+  display:grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   background: #000;
-  height: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
-  line-height: 1.4;
-}
-
-.footer-credits p {
+  height: 20px;
+  padding: 40px 10% 40px 10%;
   text-align: center;
   color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8em;
 }
 
+#footer-logo {
+  height: 40px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
 
 /* #endregion */
 
@@ -657,10 +666,6 @@ header {
     padding-top: 50px;
     padding-bottom: 120px;
     color: #eee;
-  }
-
-  .footer-credits {
-    padding-bottom: 90px;
   }
 }
 
@@ -781,6 +786,12 @@ header {
 
   .articles-gradient {
     min-height: 500px;
+  }
+
+  .footer-credits {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(30px, auto));
+    height: 100px;
   }
 }
 
