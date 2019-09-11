@@ -8,12 +8,12 @@
 }
 
 main {
+  overflow-x: auto;
   display: grid;
   justify-content: center;
 }
 
 body {
-  margin: 0;
   font-family: 'Georgia', Cambria, serif;
   font-size: 15px;
   line-height: normal;
@@ -82,10 +82,6 @@ header {
   background-repeat: no-repeat;
 }
 
-.white-menu {
-  width: 100%;
-}
-
 .white-search,
 .white-hamburger {
   display: grid;
@@ -110,7 +106,7 @@ header {
 }
 
 .row-yellow {
-  display: flex;
+  display: grid;
   align-items: center;
   padding-left: 10px;
   height: 30px;
@@ -516,7 +512,7 @@ header {
 }
 
 .footer-menu a {
-  padding: 12px;
+  /* padding: 12px; */
   font-size: 18px;
   margin: 06px;
   text-decoration: none;
@@ -547,8 +543,9 @@ header {
 
 .footer {
   height: 70px;
-  width: 100%;
   margin-top: 55px;
+  /* overflow-x: auto; */
+
 }
 
 .footer-social {
@@ -563,6 +560,8 @@ header {
 
 .footer-menu {
   display: flex;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
   flex-direction: row;
   justify-content: center;
   font-family: Raj, sans-serif;
@@ -581,14 +580,6 @@ header {
   color: #eee;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8em;
-}
-
-#footer-logo {
-  height: 40px;
-  width: 100px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
 }
 
 /* #endregion */
@@ -713,11 +704,6 @@ header {
 
   .deals-container-element {
     height: 88px;
-  }
-
-  .banner-left,
-  .banner-right {
-    width: 100%;
   }
 
   .articles {
