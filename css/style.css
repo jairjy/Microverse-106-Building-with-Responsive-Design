@@ -660,7 +660,6 @@ header {
 /* #region media-query: 768px */
 
 @media only screen and (max-width: 768px) {
-
   .row-black,
   .white-menu a {
     display: none;
