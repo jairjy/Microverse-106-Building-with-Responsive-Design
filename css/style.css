@@ -544,8 +544,6 @@ header {
 .footer {
   height: 70px;
   margin-top: 55px;
-  /* overflow-x: auto; */
-
 }
 
 .footer-social {
@@ -560,8 +558,6 @@ header {
 
 .footer-menu {
   display: flex;
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
   flex-direction: row;
   justify-content: center;
   font-family: Raj, sans-serif;
