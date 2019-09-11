@@ -188,7 +188,7 @@ header {
 
 .banner-section,
 .articles-section {
-  font-family: Raj, section;
+  font-family: Raj, sans-serif;
   font-size: 1.1em;
   color: white;
   font-weight: bold;
@@ -301,7 +301,7 @@ header {
 .deals-hour {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: rgb(146, 146, 146);
 }
 
@@ -460,7 +460,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 96px;
   height: 96px;
-  background-color: rgba(255, 68, 34, .06);
+  background-color: rgba(255, 68, 34, 0.06);
 }
 
 .articles-subtitle-left {
@@ -509,6 +509,20 @@ header {
   border-width: 1px;
 }
 
+.articles-list a {
+  text-decoration: none;
+  color: #555;
+  display: block;
+}
+
+.footer-menu a {
+  padding: 12px;
+  font-size: 18px;
+  margin: 06px;
+  text-decoration: none;
+  color: #eee;
+}
+
 .articles-list a:hover {
   color: #000;
 }
@@ -517,12 +531,6 @@ header {
   padding-left: 8px;
   color: #f42;
   content: " ● ";
-}
-
-.articles-list a {
-  text-decoration: none;
-  color: #555;
-  display: block;
 }
 
 /* #endregion */
@@ -560,14 +568,6 @@ header {
   font-family: Raj, sans-serif;
 }
 
-.footer-menu a {
-  padding: 12px;
-  font-size: 18px;
-  margin: 06px;
-  text-decoration: none;
-  color: #eee;
-}
-
 .footer-credits {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -580,7 +580,7 @@ header {
   text-align: center;
   color: #eee;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 #footer-logo {
@@ -596,12 +596,8 @@ header {
 /* #region media-query: 1024px */
 
 @media only screen and (max-width: 1024px) {
-
   .white-logo-background {
     display: initial;
-  }
-
-  .white-logo-background {
     grid-column: 1;
     grid-row: span 2;
     height: 80px;
