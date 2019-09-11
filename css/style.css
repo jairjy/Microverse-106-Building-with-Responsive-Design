@@ -417,9 +417,7 @@ header {
 .funding-p {
   grid-column: span 2;
   padding: 10px;
-  font-size: 0.9rem;
-  word-spacing: 3px;
-  line-height: 1.7em;
+  font-size: 0.8em;
   color: #555;
 }
 
@@ -429,17 +427,6 @@ header {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: white;
-}
-
-.funding-p p {
-  padding-top: 12px;
-  text-align: left;
-  word-spacing: 4px;
-}
-
-figcaption {
-  height: 79px;
-  ;
 }
 
 /* #endregion */
@@ -470,6 +457,7 @@ figcaption {
   min-height: 276px;
   max-height: 300px;
 }
+
 .articles-top,
 .articles-bottom {
   display: grid;
@@ -789,6 +777,10 @@ figcaption {
 
   .funding-title-link {
     border-left-style: none;
+  }
+
+  .articles-gradient {
+    min-height: 500px;
   }
 }
 
