@@ -70,6 +70,7 @@ body {
 
 /* #region header */
 
+
 header {
   position: fixed;
   display: grid;
@@ -273,19 +274,30 @@ header {
   margin: 10px;
 }
 
-.latest-title,
 .articles-title,
-.funding-title,
+.funding-title ,
+.latest-title,
 .deals-title {
-  display: grid;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(255, 68, 34);
   height: 30px;
   font-size: 2em;
   font-weight: 800;
-  /* margin-bottom: 10px; */
+  padding-bottom: 18px;
 }
+
+.articles-title::after,
+.funding-title::after,
+.latest-title::after,
+.deals-title::after {
+  align-items: center;
+  padding-left: 6px;
+  font-size: 20px;
+  content: ">";
+  color: #f42;
+  width: 30px;
+} 
 
 .latest-container,
 .deals-container {
@@ -475,6 +487,7 @@ figcaption {
   display: grid;
   grid-template-rows: repeat(4, minmax(30px, auto));
   gap: 5px;
+  padding-top: 15px;
 }
 
 .articles-img {
@@ -488,11 +501,19 @@ figcaption {
   display: grid;
   grid-template-columns: 1fr 96px;
   height: 96px;
+  background-color: rgba(255,68,34,.06);
 }
 
 .articles-subtitle-left {
   display: grid;
   grid-template-rows: 1fr 2fr;
+  padding-left: 12px;
+  color: #f42;
+}
+
+.articles-subtitle-left:hover{
+  text-decoration: underline;
+  color: #f42;
 }
 
 .articles-subtitle-section {
@@ -507,6 +528,8 @@ figcaption {
 
 .articles-subtitle-right {
   background: red;
+  background-size: cover;
+  background-position: center;
 }
 
 .articles-list {
@@ -514,6 +537,7 @@ figcaption {
   grid-template-rows: repeat(5, minmax(50px, auto));
   list-style: none;
   padding-left: 0;
+  color: #aaa;
 }
 
 .articles-list li {
@@ -526,8 +550,13 @@ figcaption {
   border-width: 1px;
 }
 
+.articles-list a:hover {
+  color:#000;
+}
+
 .articles-list a::before {
-  color: orange;
+  padding-left: 8px;
+  color: #f42;
   content: " ● ";
 }
 
@@ -552,6 +581,7 @@ figcaption {
 .footer {
   height: 70px;
   width: 100%;
+  margin-top: 55px;
 }
 
 .footer-social {
