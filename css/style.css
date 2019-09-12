@@ -1,0 +1,766 @@
+* a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Raj";
+  src: url("font/Rajdhani-Medium.ttf");
+}
+
+main {
+  /* overflow-x: auto; */
+  display: grid;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Georgia', Cambria, serif;
+  font-size: 15px;
+  line-height: normal;
+}
+
+/* #region header */
+
+header {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 106px 1fr;
+  grid-template-rows: repeat(minmax(30px, auto));
+  width: 100%;
+  z-index: +1;
+}
+
+.row-black,
+.row-white,
+.row-yellow {
+  grid-column: span 2;
+}
+
+.row-black,
+.row-left,
+.row-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  font-family: Arimo, sans-serif;
+  height: 32px;
+}
+
+.row-white {
+  display: grid;
+  grid-template-columns: 1fr 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #eee;
+  font-family: Raj, sans-serif;
+  font-size: 1.2em;
+}
+
+.row-left a,
+.row-right a {
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.white-logo-background,
+.row-mini {
+  display: none;
+}
+
+.white-logo-background {
+  background-image: linear-gradient(to bottom right, #cf0493 0%, #f42 100%);
+}
+
+.white-logo {
+  height: 100%;
+  background-image: url("../img/tnw-logo.svg");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.white-search,
+.white-hamburger {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-left-style: solid;
+  border-color: rgb(197, 197, 197);
+  border-width: 1px;
+  height: 100%;
+  color: gray;
+}
+
+.white-hamburger {
+  display: none;
+  color: rgb(255, 68, 34);
+}
+
+.row-white a {
+  padding: 0 10px;
+  color: gray;
+  text-decoration: none;
+}
+
+.row-yellow {
+  display: grid;
+  align-items: center;
+  padding-left: 10px;
+  min-height: 30px;
+  max-height: auto;
+  color: black;
+  background: #fd3;
+  font-family: Arimo, sans-serif;
+  overflow-x: hidden;
+}
+
+/* #endregion */
+
+/* #region banner */
+
+.banner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, minmax(200px, 250px));
+  padding-top: 120px;
+  margin: 0 10px 40px 10px;
+  gap: 10px;
+  overflow-x: hidden;
+}
+
+#banner-big {
+  grid-row: span 2;
+}
+
+.banner-picture {
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-gradient,
+.banner-big-gradient {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.725) 80%);
+}
+
+.banner-big-gradient {
+  background-image: linear-gradient(to bottom right, rgba(251, 110, 131, 1) 0%, rgba(0, 0, 0, 0.5) 60%);
+}
+
+.banner-top {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 3fr 1fr;
+  justify-content: space-between;
+}
+
+.banner-logo {
+  background-image: url("../img/tnw-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  width: 400px;
+}
+
+.banner-date {
+  color: white;
+  font-size: 1em;
+  margin-top: 10px;
+  font-family: Arimo, sans-serif;
+}
+
+.banner-bottom,
+.articles-gradient {
+  display: grid;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+#banner-big-title {
+  font-size: 3em;
+}
+
+.banner-section,
+.articles-section {
+  font-family: Raj, sans-serif;
+  font-size: 1.1em;
+  color: white;
+  font-weight: bold;
+}
+
+.banner-title,
+.articles-text {
+  font-size: 1.7em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.banner-credits,
+.latest-credits,
+.articles-credits,
+.deals-credits {
+  display: flex;
+}
+
+.banner-author,
+.banner-hour,
+.banner-share,
+.latest-author,
+.latest-hour,
+.articles-author,
+.articles-hour,
+.deals-author,
+.deals-hour {
+  font-family: Arimo, sans-serif;
+  color: white;
+  margin-right: 10px;
+}
+
+/* #endregion */
+
+/* #region latest */
+
+.latest,
+.funding,
+.articles,
+.deals {
+  display: grid;
+  gap: 10px;
+  max-width: 1152px;
+  margin: 10px;
+  overflow-x: hidden;
+  }
+
+.articles-title,
+.funding-title,
+.latest-title,
+.deals-title {
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 68, 34);
+  height: 30px;
+  font-size: 2em;
+  font-weight: 800;
+  padding-bottom: 18px;
+}
+
+.articles-title::after,
+.funding-title::after,
+.latest-title::after,
+.deals-title::after {
+  align-items: center;
+  padding-left: 6px;
+  font-size: 1.1em;
+  content: "›";
+  color: #f42;
+  width: 30px;
+}
+
+.latest-container,
+.deals-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.latest-container-element,
+.deals-container-element {
+  display: grid;
+  grid-template-rows: repeat(3, minmax(10px, auto));
+}
+
+.latest-image,
+.deals-image {
+  height: 123px;
+  background-size: cover;
+  background-position: center;
+}
+
+.latest-subtitle,
+.deals-subtitle {
+  font-size: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.latest-subtitle:hover,
+.deals-subtitle:hover {
+  text-decoration: underline;
+}
+
+.latest-author,
+.latest-hour,
+.deals-author,
+.deals-hour {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: rgb(146, 146, 146);
+}
+
+/* #endregion */
+
+/* #region funding */
+
+.funding {
+  display: grid;
+}
+
+.funding-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+.funding-updates {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-self: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 68, 34);
+  font-size: 1em;
+  height: 10px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.funding-title-link {
+  display: grid;
+  border-left-style: solid;
+  border-color: rgb(255, 68, 34);
+  border-width: 1px;
+}
+
+.funding-title-link:first-child {
+  border-left-style: none;
+}
+
+.funding-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.funding-container-element {
+  display: grid;
+  grid-template-columns: 95px 3fr;
+  grid-template-rows: repeat(4, minmax(10px));
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.funding-left-1 {
+  background-color: rgb(255, 68, 34);
+  height: 39px;
+}
+
+.funding-left-2 {
+  height: 56px;
+  background-color: rgb(255, 235, 232);
+}
+
+.funding-subtitle-first {
+  display: grid;
+  align-items: center;
+  height: 39px;
+  background-color: rgb(255, 68, 34);
+  color: white;
+  font-weight: bolder;
+}
+
+.funding-subtitle-second {
+  display: grid;
+  align-items: center;
+  height: 56px;
+  background-color: rgb(255, 235, 232);
+  font-family: Raj, sans-serif;
+}
+
+.funding-subtitle-second div:first-child {
+  font-weight: bold;
+}
+
+.funding-image {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  top: 15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.funding-line {
+  padding: 10px;
+  grid-column: span 2;
+  text-align: justify;
+}
+
+.funding-line i {
+  padding-right: 6px;
+}
+
+.funding-p {
+  grid-column: span 2;
+  padding: 10px;
+  font-size: 0.8em;
+  color: #555;
+}
+
+.funding-line-one,
+.funding-line-two {
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+}
+
+/* #endregion */
+
+/* #region articles */
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, minmax(500px, auto));
+  gap: 10px;
+}
+
+.articles-element {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(30px, auto));
+  gap: 5px;
+  padding-top: 15px;
+}
+
+.articles-picture {
+  background-size: cover;
+}
+
+.articles-gradient {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%);
+  background-size: cover;
+  min-height: 276px;
+  max-height: 300px;
+}
+
+.articles-top,
+.articles-bottom {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.articles-subtitle {
+  display: grid;
+  grid-template-columns: 1fr 96px;
+  height: 96px;
+  background-color: rgba(255, 68, 34, 0.06);
+}
+
+.articles-subtitle-left {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  padding-left: 12px;
+  color: #f42;
+}
+
+.articles-subtitle-left:hover {
+  text-decoration: underline;
+  color: #f42;
+}
+
+.articles-subtitle-section {
+  font-weight: bold;
+  font-family: Raj, sans-serif;
+}
+
+.articles-subtitle-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.articles-subtitle-right {
+  background: red;
+  background-size: cover;
+  background-position: center;
+}
+
+.articles-list {
+  display: grid;
+  grid-template-rows: repeat(5, minmax(50px, auto));
+  list-style: none;
+  padding-left: 0;
+  color: #aaa;
+}
+
+.articles-list li {
+  display: grid;
+  align-items: center;
+  font-family: Arimo, sans-serif;
+  font-size: 15px;
+  border-bottom-style: solid;
+  border-color: rgb(221, 221, 221);
+  border-width: 1px;
+}
+
+.articles-list a {
+  text-decoration: none;
+  color: #555;
+  display: block;
+}
+
+.footer-menu a {
+  /* padding: 12px; */
+  font-size: 18px;
+  margin: 06px;
+  text-decoration: none;
+  color: #eee;
+}
+
+.articles-list a:hover {
+  color: #000;
+}
+
+.articles-list a::before {
+  padding-left: 8px;
+  color: #f42;
+  content: " ● ";
+}
+
+/* #endregion */
+
+/* #region deals */
+
+.deals-author {
+  text-decoration: line-through;
+}
+
+/* #endregion */
+
+/* #region footer */
+
+.footer {
+  height: 70px;
+  margin-top: 55px;
+}
+
+.footer-social {
+  background: #131313;
+  height: 50px;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #eee;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Raj, sans-serif;
+  overflow-x: hidden;
+}
+
+.footer-credits {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #000;
+  height: 20px;
+  padding: 40px 10% 40px 10%;
+  text-align: center;
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+
+/* #endregion */
+
+/* #region media-query: 1024px */
+
+@media only screen and (max-width: 1024px) {
+  .white-logo-background {
+    display: initial;
+    grid-column: 1;
+    grid-row: span 2;
+    height: 80px;
+  }
+
+  .banner-logo,
+  .banner-date {
+    display: none;
+  }
+
+  .banner-big-gradient {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.725) 80%);
+  }
+
+  .row-black,
+  .row-white {
+    grid-column: 2;
+  }
+
+  .latest-container,
+  .deals-container,
+  .funding-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .funding-top {
+    grid-template-columns: 1fr;
+  }
+
+  .funding-updates {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    text-align: start;
+  }
+
+  .funding-title-link {
+    padding: 0 20px;
+  }
+
+  .funding-container-element:last-child {
+    display: none;
+  }
+
+  .articles {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-social {
+    background: #131313;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    color: #eee;
+  }
+}
+
+/* #endregion */
+
+/* #region media-query: 768px */
+
+@media only screen and (max-width: 768px) {
+  .row-black,
+  .white-menu a {
+    display: none;
+  }
+
+  .row-mini {
+    grid-row: 3;
+    background: black;
+  }
+
+  .row-mini a {
+    text-align: right;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .row-white {
+    grid-template-columns: 1fr 48px 48px;
+    grid-row: 2;
+  }
+
+  .white-logo-background {
+    grid-column: 1;
+    grid-row: 2;
+    height: 48px;
+  }
+
+  .white-hamburger {
+    display: grid;
+  }
+
+  .row-yellow {
+    grid-row: 3;
+  }
+
+  .banner {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 257px);
+    margin: 0 10px 10px 10px;
+    padding-top: 88px;
+  }
+
+  #banner-big {
+    grid-row: 1;
+  }
+
+  #banner-big-title {
+    font-size: 1.7em;
+  }
+
+  .deals-container-element {
+    height: 88px;
+  }
+
+  .articles {
+    grid-template-columns: initial;
+    grid-template-rows: initial;
+  }
+
+  .latest-container,
+  .deals-container,
+  .funding-container {
+    grid-template-columns: 1fr;
+  }
+
+  .latest-container-element,
+  .deals-container-element {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: repeat(2, minmax(10px, auto));
+  }
+
+  .latest-image,
+  .deals-image {
+    height: 75px;
+    grid-row: span 2;
+  }
+
+  .latest-subtitle,
+  .deals-subtitle {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+
+  .latest-credits,
+  .deals-credits {
+    padding-left: 10px;
+  }
+
+  .funding-updates {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .funding-title-link {
+    border-left-style: none;
+  }
+
+  .articles-gradient {
+    min-height: 500px;
+  }
+
+  .footer-credits {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(30px, auto));
+    height: 100px;
+  }
+}
+
+/* #endregion */
